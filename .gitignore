@@ -1,0 +1,13 @@
+*
+# Keep sources
+!pyutils/
+!pyutils/**
+__pycache__
+# Keep IDE settings
+!.vscode/
+!.vscode/**
+# Keep auxiliary files
+!.gitignore
+!license
+!readme.md
+!pyproject.toml

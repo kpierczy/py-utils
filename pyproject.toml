@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyutils"
+version = "0.0.1"
+authors = [ { name="Krzysztof Pierczyk", email="krzysztof.pierczyk@gmail.com" } ]
+description = "General-use utilities for Python"
+readme = "readme.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kpierczy/python-utils"
+"Bug Tracker" = "https://github.com/kpierczy/python-utils/issues"
