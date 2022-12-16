@@ -3,8 +3,8 @@
 # @author     Krzysztof Pierczyk (krzysztof.pierczyk@gmail.com)
 # @maintainer Krzysztof Pierczyk (krzysztof.pierczyk@gmail.com)
 # @date       Friday, 16th December 2022 12:37:44 am
-# @modified   Friday, 16th December 2022 12:49:14 am
-# @project    python-utils
+# @modified   Friday, 16th December 2022 3:06:06 am
+# @project    py-utils
 # @brief      General-use utilities for downloading files from the network
 # 
 # 

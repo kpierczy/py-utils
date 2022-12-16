@@ -91,7 +91,7 @@
 
     // Custom variables
     "psi-header.variables": [
-        ["projectname", "python-utils"]
+        ["projectname", "py-utils"]
     ],
 
     // Language configuration
