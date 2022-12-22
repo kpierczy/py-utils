@@ -3,7 +3,7 @@
 # @author     Krzysztof Pierczyk (krzysztof.pierczyk@gmail.com)
 # @maintainer Krzysztof Pierczyk (krzysztof.pierczyk@gmail.com)
 # @date       Friday, 16th December 2022 12:37:44 am
-# @modified   Friday, 16th December 2022 3:06:06 am
+# @modified   Thursday, 22nd December 2022 3:07:11 am
 # @project    py-utils
 # @brief      General-use utilities for downloading files from the network
 # 
@@ -27,8 +27,7 @@
 
 from pathlib import Path
 import requests
-import rich.progress
-import rich.console
+from pyutils.visuals.progressbars import StandardBar
 from typing import Optional
 
 # ============================================================ Functions =========================================================== #
@@ -47,25 +46,7 @@ def download_file(
     total_length = int(response.headers.get('content-length'))
     
     # Create pretty progressbar
-    progressbar = rich.progress.Progress(
-
-        # Layout
-        rich.progress.SpinnerColumn(),
-        rich.progress.TextColumn("[rich.progress.description]{task.description}"),
-        rich.progress.BarColumn(),
-        rich.progress.DownloadColumn(),
-        rich.progress.TextColumn("[bright_black][rich.progress.percentage]{task.percentage:>3.0f}%"),
-        rich.progress.TextColumn("|"),
-        rich.progress.TransferSpeedColumn(),
-        rich.progress.TextColumn("|"),
-        rich.progress.TextColumn("eta"),
-        rich.progress.TimeRemainingColumn(),
-        rich.progress.TextColumn("{task.fields[message]}"),
-        # Config
-        console   = rich.console.Console(),
-        transient = False,
-
-    )
+    progressbar = StandardBar()
     
     # Initialize the bar
     progressbar.start()
